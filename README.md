@@ -1,62 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## What's the motivation behind this project?
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+The vast majority of projects that I was involved in the last few years had some kind of administration panel for the end user. If you have worked in a project like that, you probably encountered datatables, csv imports, roles/permissions and searches.
 
-## About Laravel
+New tools emerges in the ecosystem, but maybe that project that you're working on the moment isn't the best fit for this hot tech.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+So I'm using this project to learn some new things that I'm interested at the moment (like php 8, typescript, vue 3), and also taking this opportunity to gather together a set of features that I'm sure I'll reach for sometime in the  feature.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+I'll do my best to keep the code simple and maintainable.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Here's what the tech stack looks like
 
-## Learning Laravel
+The goal here is to get the most benefits that we can from the first party packages of Laravel, while building some part of the code "from scratch". For example, I'm not going to use Jetstream and get everything done for me, I'll probably use fortify and implement some pieces by myself.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+I'm planning to go with:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Item | Read more about it |
+| ------ | ------ |
+| Laravel |  [laravel.com](https://laravel.com/) |
+| Vue.js | [vuejs.org](https://v3.vuejs.org/) |
+| Inertia | [inertiajs.com](https://inertiajs.com/) |
+| Tabler (Bootstrap theme) | [tabler.github.io](https://tabler.github.io/) |
+| Typescript | [typescriptlang.org](https://www.typescriptlang.org/) |
+| Homestead |  [laravel.com/docs/homestead](https://laravel.com/docs/homestead) |
 
-## Laravel Sponsors
+## What's on the wishlist?
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+I want to implement a lot of features, but right now I don't have a priority or a timeline for it. Some of the packages / features that I'm looking forward to see in action are:
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
-
+- [Pest](https://pestphp.com/) - An elegant PHP Testing Framework
+- [Cypress](https://www.cypress.io/) - Fast, easy and reliable testing for anything that runs in a browser.
+- [Fortify](https://laravel.com/docs/fortify) - A frontend agnostic authentication backend implementation for Laravel
+- [Sanctrum](https://laravel.com/docs/sanctrum) - To issue tokens to users without thinking about oAuth
+- [Laravel Excel](https://laravel-excel.com/) - Supercharged Excel exports and imports in Laravel
+- [Echo](https://laravel.com/docs/broadcasting#client-ably) - Subscribe to channels and listen for events broadcast by your server-side broadcasting driver
+- [Scout + Melisearch](https://laravel.com/docs/scout) - Full-text search to your Eloquent models.
+- [Envoy](https://laravel.com/docs/envoy) -  Setup tasks for deployment
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Thank you for considering contributing to this project! The contribution guide it's still a piece to be done.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
