@@ -20,6 +20,7 @@
         "@inertiajs/inertia": "^0.8.6",
         "@inertiajs/inertia-vue3": "^0.3.12",
         "@inertiajs/progress": "^0.2.4",
+        "@tabler/core": "^1.0.0-beta2",
         "vue": "^3.0.11"
     }
 }
