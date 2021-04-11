@@ -1,0 +1,2 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[93],{3093:(e,n,c)=>{"use strict";c.r(n),c.d(n,{default:()=>l});var r=c(5166);const u={render:function(e,n){return(0,r.openBlock)(),(0,r.createBlock)("h1",null,"Hi Login Page")}},l=u}}]);
+//# sourceMappingURL=93.js.map?id=16b0cdf34931b3b68287
