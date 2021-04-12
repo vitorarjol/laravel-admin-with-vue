@@ -1,0 +1,27 @@
+{
+  "resources/js/app.ts": {
+    "file": "assets/app.2d3a2986.js",
+    "src": "resources/js/app.ts",
+    "isEntry": true,
+    "imports": [
+      "_vendor.e68a5b8b.js"
+    ],
+    "dynamicImports": [
+      "resources/js/Pages/Auth/Login.vue"
+    ],
+    "css": [
+      "assets/app.a9141b61.css"
+    ]
+  },
+  "_vendor.e68a5b8b.js": {
+    "file": "assets/vendor.e68a5b8b.js"
+  },
+  "resources/js/Pages/Auth/Login.vue": {
+    "file": "assets/Login.67721a63.js",
+    "src": "resources/js/Pages/Auth/Login.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.e68a5b8b.js"
+    ]
+  }
+}
