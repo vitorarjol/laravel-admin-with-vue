@@ -35,6 +35,47 @@ I want to implement a lot of features, but right now I don't have a priority or 
 - [Echo](https://laravel.com/docs/broadcasting#client-ably) - Subscribe to channels and listen for events broadcast by your server-side broadcasting driver
 - [Scout + Melisearch](https://laravel.com/docs/scout) - Full-text search to your Eloquent models.
 - [Envoy](https://laravel.com/docs/envoy) -  Setup tasks for deployment
+
+
+## Getting started
+
+Clone the repo on your machine:
+
+```sh
+git clone https://github.com/vitorarjol/laravel-admin-with-vue.git my-admin
+cd my-admin
+```
+
+Install PHP dependencies:
+
+```sh
+composer install
+```
+
+Install NPM dependencies and build the assets:
+
+```sh
+npm i && npm run prod
+```
+
+Setup configuration:
+
+```sh
+cp .env.example .env
+```
+
+Generate the application key:
+
+```sh
+php artisan key:generate
+```
+
+Run the dev server:
+
+```sh
+php artisan serve
+```
+
 ## Contributing
 
 Thank you for considering contributing to this project! The contribution guide it's still a piece to be done.
