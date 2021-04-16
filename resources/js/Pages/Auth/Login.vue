@@ -1,8 +1,8 @@
 <template>
     <div class="page page-center">
-        <!-- <teleport to="head">
-            <title>{{ title('Login') }}</title>
-        </teleport>-->
+        <teleport to="head">
+            <title>{{ setPageTitle('Login') }}</title>
+        </teleport>
         <div class="container-tight py-4">
             <form class="card card-md" action="." method="get" autocomplete="off">
                 <div class="card-body">
@@ -106,7 +106,7 @@
 </template>
 
 <script lang="ts">
-interface LoginComponentData {
+type LoginComponentData = {
     email: string,
     password: string,
     rememberMe: boolean,

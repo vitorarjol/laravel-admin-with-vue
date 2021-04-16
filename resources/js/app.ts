@@ -28,8 +28,8 @@ createApp({
 })
     .mixin({
         methods: {
-            route: window.route,
-            title: (title) => `Ping CRM - ${title}`,
+            route: window.route, // ziggy
+            setPageTitle: (title: string) => `Admin Explorations - ${title}`,
         },
     })
     .use(plugin)
