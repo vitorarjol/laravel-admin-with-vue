@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +19,6 @@ Route::get('/', function () {
 });
 
 // Auth
-Route::get('login', [LoginController::class, 'index'])
-    ->name('login')
-    ->middleware('guest');
+require __DIR__ . '/auth.php';
+
+Route::get('/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'verified', 'password.confirm'])->name('dashboard');

@@ -1,14 +1,21 @@
 <template>
     <teleport to="head">
-        <title>{{ setPageTitle('Login') }}</title>
+        <title>{{ setPageTitle('Crie sua conta') }}</title>
     </teleport>
-    <form class="card card-md" @submit.prevent="makeLogin">
+    <form class="card card-md" @submit.prevent="registerUser">
         <div class="card-body">
-            <h2
-                class="card-title text-center"
-                :class="{ 'mb-2': status !== null, 'mb-4': status === null }"
-            >Acesse sua conta</h2>
-            <div v-if="status" class="text-success text-center mb-4" v-text="status"></div>
+            <h2 class="card-title text-center mb-4">Cadastre-se para utilizar o sistema</h2>
+            <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    :class="{ 'is-invalid': errors.name !== undefined }"
+                    placeholder="Digite seu nome completo"
+                    v-model="form.name"
+                />
+                <div v-if="errors.name" class="invalid-feedback">{{ errors.name }}</div>
+            </div>
             <div class="mb-3">
                 <label class="form-label">E-mail</label>
                 <input
@@ -21,12 +28,7 @@
                 <div v-if="errors.email" class="invalid-feedback">{{ errors.email }}</div>
             </div>
             <div class="mb-2">
-                <label class="form-label">
-                    Senha
-                    <span class="form-label-description">
-                        <inertia-link :href="route('password.request')">Esqueci minha senha</inertia-link>
-                    </span>
-                </label>
+                <label class="form-label">Senha</label>
                 <div class="input-group input-group-flat">
                     <input
                         :type="showPassword ? 'text' : 'password'"
@@ -91,28 +93,22 @@
                     <div v-if="errors.password" class="invalid-feedback">{{ errors.password }}</div>
                 </div>
             </div>
-            <div class="mb-2">
-                <label class="form-check">
-                    <input type="checkbox" class="form-check-input" v-model="form.rememberMe" />
-                    <span class="form-check-label">Continuar conectado</span>
-                </label>
-            </div>
             <div class="form-footer">
                 <button
                     type="submit"
                     class="btn btn-primary w-100"
                     :disabled="form.processing"
-                >Acessar</button>
+                >Concluir cadastro</button>
             </div>
         </div>
     </form>
     <div class="text-center text-muted mt-3">
-        Não possui uma conta?
-        <inertia-link :href="route('register')" tabindex="-1">Cadastre-se</inertia-link>
+        Já possui uma conta?
+        <inertia-link :href="route('login.show')" tabindex="-1">Acesse</inertia-link>
     </div>
 </template>
 
-<script name="Login" lang="ts" setup>
+<script name="Register" lang="ts" setup>
 import { ref, defineProps } from "vue";
 import { useForm } from '@inertiajs/inertia-vue3'
 
@@ -120,23 +116,19 @@ const props = defineProps({
     errors: {
         type: Object,
         required: true
-    },
-    status: {
-        type: String,
-        required: false
     }
 })
 
 const form = useForm({
+    name: '',
     email: '',
     password: '',
-    rememberMe: false,
 })
 const showPassword = ref(false)
 
-const makeLogin: () => void = () => {
+const registerUser: () => void = () => {
     form.clearErrors()
-    form.post(route('login.confirm'), {
+    form.post(route('register'), {
         preserveScroll: true,
         onFinish: () => form.reset('password'),
     })

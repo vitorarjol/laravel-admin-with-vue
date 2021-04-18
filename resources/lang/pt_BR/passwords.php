@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'reset' => 'Sua senha foi alterada!',
+    'reset' => 'Senha alterada com sucesso!',
     'sent' => 'Enviamos em seu e-mail um link para concluir a alteração de senha!',
     'throttled' => 'Aguarde para tentar novamente.',
     'token' => 'Esse link para redefinição de senha está inválido.',

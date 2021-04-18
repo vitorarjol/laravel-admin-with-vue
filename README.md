@@ -10,7 +10,7 @@ I'll do my best to keep the code simple and maintainable.
 
 ## Here's what the tech stack looks like
 
-The goal here is to get the most benefits that we can from the first party packages of Laravel, while building some part of the code "from scratch". For example, I'm not going to use Jetstream and get everything done for me, I'll probably use fortify and implement some pieces by myself.
+The goal here is to get the most benefits that we can from the first party packages of Laravel, while building some part of the code "from scratch". For example, I'm not going to use Jetstream and get all the pieces of authentication done for me. I used Breeze as reference to keep a minimal footprint and implement some details by myself.
 
 I'm planning to go with:
 
@@ -29,7 +29,6 @@ I want to implement a lot of features, but right now I don't have a priority or 
 
 - [Pest](https://pestphp.com/) - An elegant PHP Testing Framework
 - [Cypress](https://www.cypress.io/) - Fast, easy and reliable testing for anything that runs in a browser.
-- [Fortify](https://laravel.com/docs/fortify) - A frontend agnostic authentication backend implementation for Laravel
 - [Sanctrum](https://laravel.com/docs/sanctrum) - To issue tokens to users without thinking about oAuth
 - [Laravel Excel](https://laravel-excel.com/) - Supercharged Excel exports and imports in Laravel
 - [Echo](https://laravel.com/docs/broadcasting#client-ably) - Subscribe to channels and listen for events broadcast by your server-side broadcasting driver
